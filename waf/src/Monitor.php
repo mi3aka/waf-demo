@@ -153,15 +153,18 @@ class Monitor
             if (preg_match("/\.\.|\/.+?\//i", $value)) {//路径穿越
                 $original_request = $this->log->general_original_request();
                 $this->log->write('HIGH', 'Path Traversal', 'Keyword ' . $value . "\n" . 'Original Request File ' . $original_request);
-                break;
+                echo "<script>alert('Path Traversal')</script>";
+                die();
             } elseif (preg_match("/\/passwd|\/shadow|\/locate|\/htaccess|\.ini|\.git|\.svn|\.ssh|\/id_rsa|\/known_hosts|\/authorized_keys|docker|history|shrc|\.profile|\.log|\.xml/i", $value)) {//敏感文件读取
                 $original_request = $this->log->general_original_request();
                 $this->log->write('HIGH', 'Sensitive Files', 'Keyword ' . $value . "\n" . 'Original Request File ' . $original_request);
-                break;
+                echo "<script>alert('Sensitive Files')</script>";
+                die();
             } elseif (preg_match("/file:\/\/|php:\/\/|zlib:\/\/|data:\/\/|glob:\/\/|phar:\/\/|ssh2:\/\/|rar:\/\/|ogg:\/\/|expect:\/\//i", $value)) {//PHP伪协议
                 $original_request = $this->log->general_original_request();
                 $this->log->write('HIGH', 'Wrapper Detect', 'Keyword ' . $value . "\n" . 'Original Request File ' . $original_request);
-                break;
+                echo "<script>alert('PHP Wrapper Detect')</script>";
+                die();
             }
         }
     }
