@@ -4,6 +4,48 @@
 
 ![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011714843.png)
 
+## 示例
+
+使用[https://github.com/OWASP/Vulnerable-Web-Application](https://github.com/OWASP/Vulnerable-Web-Application)
+
+文件上传检测
+
+![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011714622.png)
+
+XSS检测
+
+![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011716647.png)
+
+![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011716153.png)
+
+![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011717277.png)
+
+![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011717048.png)
+
+文件包含/路径穿越/伪协议
+
+![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011724322.png)
+
+![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011725155.png)
+
+SQL检测
+
+![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011734115.png)
+
+![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011734859.png)
+
+![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011735441.png)
+
+RCE检测
+
+![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011736649.png)
+
+![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011737019.png)
+
+![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011737412.png)
+
+![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011738399.png)
+
 ## 检测
 
 ### 命令注入&代码注入
@@ -112,21 +154,3 @@ data:
 1. 根据监控模块传递的信息生成日志记录
 
 2. 根据请求方式和Content-type生成原始请求包
-
-## 示例
-
-使用[https://github.com/OWASP/Vulnerable-Web-Application](https://github.com/OWASP/Vulnerable-Web-Application)
-
-文件上传检测
-
-![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011714622.png)
-
-XSS检测
-
-![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011716647.png)
-
-![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011716153.png)
-
-![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011717277.png)
-
-![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011717048.png)
