@@ -1,0 +1,2 @@
+php_value include_path ".:/var/www/html/waf"
+php_value auto_prepend_file "waf.php"
