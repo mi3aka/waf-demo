@@ -2,8 +2,7 @@ FROM debian:9-slim
 RUN sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list; \
     sed -i 's/security.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list; \
     apt-get update && apt-get upgrade -y; \
-    apt-get install gnupg wget curl apt-transport-https lsb-release ca-certificates unzip nano python3-pip -y; \
-    pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple psutil; \
+    apt-get install gnupg wget curl apt-transport-https lsb-release ca-certificates unzip nano -y; \
     wget -O /etc/apt/trusted.gpg.d/php.gpg https://mirror.sjtu.edu.cn/sury/php/apt.gpg; \
     echo "deb https://mirror.sjtu.edu.cn/sury/php/ stretch main" > /etc/apt/sources.list.d/php.list; \
     apt-get update; \
