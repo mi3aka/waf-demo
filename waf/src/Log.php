@@ -46,7 +46,10 @@ class Log
             $original_request .= "\r\n--" . current($boundary) . "--";
             $original_request .= "\r\n\r\n";
         } else {
-            $original_request .= "\r\n" . file_get_contents("php://input") . "\r\n\r\n";
+            $original_request .= "\r\n";
+            if ($_SERVER['REQUEST_METHOD'] !== 'GET') {
+                $original_request .= file_get_contents("php://input") . "\r\n\r\n";
+            }
         }
         file_put_contents($filename, $original_request, FILE_APPEND | LOCK_EX);
         return $filename;
