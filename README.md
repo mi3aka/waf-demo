@@ -1,6 +1,8 @@
+>Demo样例,请勿用于实际环境,不足之处欢迎指点和纠正,感激不尽
+
 ## 流程图
 
-![](1.png)
+![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011714843.png)
 
 ## 检测
 
@@ -112,3 +114,19 @@ data:
 2. 根据请求方式和Content-type生成原始请求包
 
 ## 示例
+
+使用[https://github.com/OWASP/Vulnerable-Web-Application](https://github.com/OWASP/Vulnerable-Web-Application)
+
+文件上传检测
+
+![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011714622.png)
+
+XSS检测
+
+![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011716647.png)
+
+![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011716153.png)
+
+![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011717277.png)
+
+![](https://cdn.jsdelivr.net/gh/AMDyesIntelno/PicGoImg@master/202206011717048.png)
